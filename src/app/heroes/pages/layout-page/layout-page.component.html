@@ -26,7 +26,10 @@
             <mat-icon>menu</mat-icon>
         </button>
         <span class="spacer"></span>
-        <button mat-button [ngStyle]="{ 'color':'white' }">
+
+        <small class="text-white">{{ user?.email }}</small>
+
+        <button mat-button [ngStyle]="{ 'color':'white' }" (click)="onLogout()">
             Logout
         </button>
     </mat-toolbar>
